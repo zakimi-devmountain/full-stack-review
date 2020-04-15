@@ -1,0 +1,13 @@
+.header-container {
+    height: 100px;
+    background-color: #444445;
+    color: white;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 30px;
+}
+
+.header-logo {
+    margin: 0px;
+}

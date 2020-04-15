@@ -1,0 +1,36 @@
+.profile {
+    height: calc(100vh - 100px);
+    background-color: #25AAE1;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.profile h1 {
+    margin: 0px 0px 20px 0px;
+}
+
+.profile-picture {
+    height: 300px;
+    border-radius: 50%;
+}
+
+.profile button {
+    height: 30px;
+    width: 225px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.profile button:hover {
+    background-color: white;
+    color: #444445;
+}
+
+.profile button:active {
+    background-color: transparent;
+    color: #444445;
+}

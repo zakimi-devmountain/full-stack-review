@@ -1,0 +1,11 @@
+.dashboard {
+    height: calc(100vh - 100px);
+    background-color: #25AAE1;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.dashboard h1 {
+    margin: 0px;
+}
