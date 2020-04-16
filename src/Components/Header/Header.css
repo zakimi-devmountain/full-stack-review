@@ -3,6 +3,7 @@
     background-color: #444445;
     color: white;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     padding: 0px 30px;
@@ -10,4 +11,16 @@
 
 .header-logo {
     margin: 0px;
+}
+
+.header-container nav {
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
 }

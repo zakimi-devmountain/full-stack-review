@@ -6,6 +6,45 @@
     padding-top: 20px;
 }
 
+.dashboard input {
+    height: 30px;
+    width: 175px;
+    background-color: transparent;
+    color: white;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.dashboard button {
+    height: 30px;
+    width: 75px;
+    background-color: transparent;
+    color: white;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.dashboard button:hover {
+    background-color: white;
+    color: #444445;
+}
+
 .dashboard h1 {
     margin: 0px;
+}
+
+.post-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-image {
+    height: 250px;
+    margin: 20px;
+    border-radius: 10px;
 }
