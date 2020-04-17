@@ -1,3 +1,4 @@
+//In this application, App.js is used to display the Header and all routes.
 import React from 'react';
 import Header from './Components/Header/Header';
 import routes from './routes';

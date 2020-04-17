@@ -1,3 +1,7 @@
+//index.js is the parent JS file of your react application, and is not commonly
+//worked in. You will, however, bring in HashRouter(for routing) and Provider(redux)
+//when your project calls for it. These should be imported and then wrapped around
+//the App component. Provider is passed your store file as a prop.
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter} from 'react-router-dom';

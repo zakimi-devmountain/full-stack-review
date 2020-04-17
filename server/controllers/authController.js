@@ -1,3 +1,5 @@
+//bcrypt is used for hashing passwords, so you can safely store a user password in
+//your database.
 const bcrypt = require('bcryptjs');
 
 module.exports = {
@@ -44,6 +46,7 @@ module.exports = {
         res.status(202).send(req.session.user);
     },
     logout: (req, res) => {
+        //logout will clear out the session object of user data.
         req.session.destroy();
         res.sendStatus(200);
     }

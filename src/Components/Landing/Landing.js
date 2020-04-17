@@ -1,7 +1,13 @@
+//Landing pages are the first page your users will see. In the case of many 
+//websites, the landing page is an authentication page. Below includes authentication
+//functions for logging in and creating an account.
 import React, {Component} from 'react';
 import './Landing.css';
 import axios from 'axios';
+//connect needs to be brought into components that are subscribing to values from 
+//redux.
 import {connect} from 'react-redux';
+//actions need to be brought into components that are subscribing to them.
 import {getUser} from '../../redux/reducer';
 
 class Landing extends Component {
@@ -17,6 +23,8 @@ class Landing extends Component {
         }
     }
 
+    //This functionality will ensure that a logged in user can't visit the 
+    //authentication page, and instead route them to the dashboard view.
     componentDidMount(){
         if(this.props.user.email){
             this.props.history.push('/dash');
@@ -31,6 +39,10 @@ class Landing extends Component {
         this.setState({registerView: !this.state.registerView})
     }
 
+    //On the client-side your authentication functions should allow the user to 
+    //send the information that you need on the server (email, password). Once 
+    //their information comes from the server, it is common to set that to redux or
+    //local state for the client to use.
     handleRegister = () => {
         const {username, email, password, verPassword, picture} = this.state;
         if(password !== '' && password === verPassword){
@@ -112,6 +124,8 @@ class Landing extends Component {
     }
 }
 
+//mapStateToProps allows you to define what redux state values this component is
+//subscribing to.
 const mapStateToProps = reduxState => reduxState;
 
 // const mapStateToProps = reduxState => {
@@ -121,4 +135,6 @@ const mapStateToProps = reduxState => reduxState;
 //     }
 // }
 
+//connect is what will place state and action values from redux onto your component.
+//Pass it mapStateToProps and any actions you are subscribing to.
 export default connect(mapStateToProps, {getUser})(Landing);
