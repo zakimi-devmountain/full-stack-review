@@ -12,3 +12,4 @@
 * massive
 * express-session
 * bcryptjs
+* dotenv
